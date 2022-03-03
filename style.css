@@ -1,0 +1,135 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+    color: var(--white);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--card-bg);
+    max-width: 375px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.cube-pix-card {
+    position: relative;
+    max-width: 375px;
+}
+
+.cube-pix {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    transition: color .25s ease;
+}
+
+.description {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 20px;
+}
+
+#eth {
+    color: var(--cyan);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#days {
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#eth svg, #days svg {
+    margin-right: 5px;
+}
+
+.jw-pix {
+    border: 2px solid white;
+    border-radius: 52%;
+    max-width: 36px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.creation {
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+span {
+    color: white;
+    padding-left: 3px;
+    transition: color 0.25s ease;
+}
+
+.attribution {
+    padding-top: 60px;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: var(--soft-blue);
+}
+
+span:hover, h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.cube-pix-card:hover {
+    cursor: pointer;    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 247, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
