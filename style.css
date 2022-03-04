@@ -22,14 +22,13 @@ body {
 
 .card {
     background-color: var(--card-bg);
-    max-width: 375px;
+    width: 275px;
     border-radius: 20px;
     padding: 25px;
 }
 
 .cube-pix-card {
     position: relative;
-    max-width: 375px;
 }
 
 .cube-pix {
@@ -69,7 +68,7 @@ h1 {
     margin-right: 5px;
 }
 
-#eth svg, #days svg {
+#eth img, #days img {
     margin-right: 5px;
 }
 
